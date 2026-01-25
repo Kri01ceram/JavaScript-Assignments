@@ -63,3 +63,16 @@
 // console.log(ans);
 
 // q5
+const input = { fruits: ["apple", "banana"], veggies: ["carrot", "pea"] }
+function flattenObject(obj){ 
+     const result = [];
+        for(let key in obj){
+            const arr = obj[key];
+            for(let i=0; i<arr.length; i++){
+                result.push(arr[i]);
+            }
+        }
+        return result;
+}
+const ans = flattenObject(input);   
+console.log(ans);
