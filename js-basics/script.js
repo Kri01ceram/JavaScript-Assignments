@@ -63,16 +63,38 @@
 // console.log(ans);
 
 // q5
-const input = { fruits: ["apple", "banana"], veggies: ["carrot", "pea"] }
-function flattenObject(obj){ 
-     const result = [];
-        for(let key in obj){
-            const arr = obj[key];
-            for(let i=0; i<arr.length; i++){
-                result.push(arr[i]);
-            }
-        }
-        return result;
-}
-const ans = flattenObject(input);   
-console.log(ans);
+// const input = { fruits: ["apple", "banana"], veggies: ["carrot", "pea"] }
+// function flattenObject(obj){ 
+//      const result = [];
+//         for(let key in obj){
+//             const arr = obj[key];
+//             for(let i=0; i<arr.length; i++){
+//                 result.push(arr[i]);
+//             }
+//         }
+//         return result;
+// }
+// const ans = flattenObject(input);   
+// console.log(ans);
+
+// q6
+// const input = [
+//   { name: "A", city: "Delhi" },
+//   { name: "B", city: "Mumbai" },
+//   { name: "C", city: "Delhi" }
+// ]
+// function groupByCity(arr){
+//     const result = {}
+//     for(let key in arr){
+//         const p = arr[key]
+//         const city = p.city
+//         const name = p.name
+//         if(!result[city]){
+//             result[city] = []
+//         }
+//         result[city].push(name)
+//     }
+//     return result;
+// }
+// const ans = groupByCity(input);
+// console.log(ans);
