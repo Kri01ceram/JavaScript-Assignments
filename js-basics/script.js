@@ -98,3 +98,67 @@
 // }
 // const ans = groupByCity(input);
 // console.log(ans);
+
+// q7
+// const input = { a: 20, b: 60, c: 40, d: 90 }
+// function printGRValue(data,threshold){
+//     const result = {}
+//     for(let key in data){
+//         if(data[key] > threshold){
+//             result[key] = data[key];
+//         }
+//     }
+//     return result;
+// }
+// const ans = printGRValue(input,50);
+// console.log(ans);
+
+// q8
+// const input = { A: [80, 90], B: [70, 75, 85] }
+// function highestAverage(data){
+//     let highestAvg = -Infinity;
+//     let topCategory = "";
+//     for(let category in data){
+//         const scores = data[category];
+//         const total = scores.reduce((acc, curr) => acc + curr, 0);
+//         const avg = total / scores.length;
+//         if(avg > highestAvg){
+//             highestAvg = avg;
+//             topCategory = category;
+//         }
+//     }
+//     return topCategory; 
+// }
+// const ans = highestAverage(input);
+// console.log(ans);
+
+// // q9
+// const input = { x: [1,2,3], y: [2,3,4], z: [4,5] }
+// function UniqueValues(data){
+//     const uniqueSet = new Set();
+//     for(let key in data){
+//         const values = data[key];
+//         for(let i=0; i<values.length; i++){
+//             uniqueSet.add(values[i]);
+//         }
+//     }
+//     return Array.from(uniqueSet);
+// }
+// const ans = UniqueValues(input);
+// console.log(ans);
+
+// q10 //++++++
+// const input = { name: "Rahul", age: 23, city: "Noida" } 
+// const input2 = ["name","city"]
+// function filterObject(data, keys){
+//     const result = {};
+//     for(let i=0; i<keys.length; i++){
+//         const key = keys[i];
+//         if(data.hasOwnProperty(key)){
+//             result[key] = data[key];
+//         }
+//     }
+//     return result;
+// }
+// const ans = filterObject(input, input2);
+// console.log(ans);
