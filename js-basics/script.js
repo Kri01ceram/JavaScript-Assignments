@@ -162,3 +162,55 @@
 // }
 // const ans = filterObject(input, input2);
 // console.log(ans);
+
+// q11
+// const input = { a: 3, b: 1, c: 2 }
+// function sortObjectByValues(input){ 
+//     const entries = Object.entries(input);
+//     entries.sort(([, valueA], [, valueB]) => valueA - valueB);
+//     return entries;
+// }
+// const ans = sortObjectByValues(input);
+// console.log(ans);
+
+// q12
+// const input = { a: 1, b: 2, c: 3 }
+// function countNumberOfKeys(input){
+//     let count = 0;
+//     for(let key in input){
+//         count++;
+//     }
+//     return count;
+// }
+// const ans = countNumberOfKeys(input);
+// console.log(ans);
+
+// q13
+// const input = { name: "alice", city: "delhi" }
+// function capitalizeFirstValues(data){
+//     const result = {}
+//     for(let key in data){
+//         const value = data[key];
+//         if(typeof value === "string"){
+//             result[key] = value.charAt(0).toUpperCase() + value.slice(1);
+//         }else{
+//             result[key] = value;
+//         }
+//     }
+//     return result;
+// }
+// const ans = capitalizeFirstValues(input);
+// console.log(ans);
+
+// q14
+// const input = { name: "Alice", age: 25 }
+// function convertValuesToString(data){
+//     let result = "";
+//     for (let key in data) {
+//         const value = data[key];
+//         result += `${key}:${value},`;
+//     }
+//     return result.length === 0 ? "" : result.slice(0, -1);
+// }
+// const ans = convertValuesToString(input);
+// console.log(ans);
