@@ -8,5 +8,19 @@ Hint - use Date class exposed in JS
 */
 
 function calculateTime(n) {
-    return 0.01;
+    const iterations = Number(n);
+
+    if (!Number.isFinite(iterations) || iterations <= 0) {
+        return 0;
+    }
+
+    const start = Date.now();
+    let sum = 0;
+
+    for (let i = 1; i <= iterations; i += 1) {
+        sum += i;
+    }
+
+    const end = Date.now();
+    return (end - start) / 1000;
 }
