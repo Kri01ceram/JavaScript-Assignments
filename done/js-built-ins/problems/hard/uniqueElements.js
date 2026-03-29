@@ -17,9 +17,16 @@
   Once you've implemented the logic, test your code by running
   - `npm run test-unique`
 */
-
 function getUniqueElements(arr) {
-  // Your code here
+  const seen = new Map();
+  
+  for (let ele of arr) {
+    if (!seen.has(ele)) {
+      seen.set(ele, true);
+    }
+  }
+  
+  return [...seen.keys()];
 }
 
 module.exports = getUniqueElements;

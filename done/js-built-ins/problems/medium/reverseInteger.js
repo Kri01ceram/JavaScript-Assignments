@@ -22,7 +22,12 @@
 */
 
 function reverseInteger(num) {
-  // Your code here
+  let result = num.toString().split('').reverse().join('');
+  if (num < 0) {
+    return parseInt(result) * -1;
+  } else {
+    return parseInt(result);
+  }
 }
 
 module.exports = reverseInteger;

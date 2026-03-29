@@ -25,3 +25,6 @@ function findDuplicates(arr) {
 
 module.exports = findDuplicates;
 
+// arr.indexOf(ele) always returns the index of the first occurrence of an element.
+// So the logic is: "If the first time this element appears is NOT at the current index, it must be a duplicate."
+

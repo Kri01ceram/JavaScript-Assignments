@@ -19,7 +19,9 @@
 */
 
 function reverseString(str) {
-  // Your code here
+  str = str.split('').reverse().join('');
+  return str;
 }
 
 module.exports = reverseString;
+//string doesnt have a revrse iun  it but revers edoes so cant uyse it directly on it .split() chnages it toi array to performthe operation.
